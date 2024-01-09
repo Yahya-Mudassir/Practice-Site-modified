@@ -1,0 +1,12 @@
+table{
+    color: rgb(170, 170, 170);
+    background-color: rgb(46, 46, 46);
+    width: 80%;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: center;
+    /* height: 100px; */
+    vertical-align: auto;
+
+}

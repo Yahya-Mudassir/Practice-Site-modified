@@ -1,0 +1,86 @@
+div p, h1{
+    background-color: darkkhaki;
+}
+div+p{
+    color: darkgoldenrod;
+}
+div ~ p{
+    color: brown;
+    font-style: italic;
+}
+
+/* pseudo class */
+
+/* unvisited */
+.pseudo:link{
+    color: aqua;
+    text-decoration: none;
+    margin: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid firebrick;
+    border-radius: 10px;
+    background-color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* hover */
+.pseudo:hover{
+    color: blueviolet;
+}
+
+/* visited */
+.pseudo:visited{
+    color: chartreuse;
+}
+
+/* active */
+.pseudo:active{
+    color: black;
+}
+
+/* pseudo element */
+
+.pseudo-1::first-line{
+    color: aliceblue;
+}
+h1::before{
+    content: url(../HTML/Images/instagram.png)
+}
+h1::after{
+    content: url(../HTML/Images/microsoft.png);
+}
+::marker{
+    color: pink;
+}
+::selection{
+    background-color: firebrick;
+}
+
+/* attribute selectors */
+a[target]{
+    background-color: grey;
+}
+
+/* attribute + value */
+a[target="_blank"]{
+    color: black;
+}
+
+/* with hyphen or exact element */
+li[class|="test"]{
+    color: greenyellow !important;
+}
+/* start with value */
+li[class^="t"]{
+    color: yellow;
+}
+/* end with value */
+li[class$="top"]{
+    color: crimson;
+}
+/* value anywhere */
+li[class*="s"]{
+    color: salmon;
+}
+

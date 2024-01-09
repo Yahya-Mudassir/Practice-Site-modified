@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./head.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mainlinks"> 
+        <a class="links" href="./index.html">Home</a>
+        <a class="links" href="./Tables.html">Tables</a>
+        <a class="links" href="./Lists.html">Lists</a>
+        <a class="links" href="./Test.html">Test</a>
+        <a class="links" href="./Form.html">Forms</a>
+        <a class="links" href="./Multimedia.html">Multimedia</a>
+        <a class="links" href="./Contact.html">Contact</a>
+      </div>
+    <h1>Html Forms</h1>
+    <form class="fieldset" action="Success.html">
+        <fieldset>
+            <legend>Input Type</legend>
+            <label for="FName">Name:</label>
+            <input id="FName" size="140px" type="text" maxlength="10" placeholder="Your Name" value="Yahya" readonly
+                required /><br />
+            <label for="male">Human</label>
+            <input name="gender" id="male" type="radio" checked required />
+            <label for="female">Robot</label>
+            <input name="gender" id="female" type="radio" required /><br />
+            <input type="date" /><br />
+            <input type="datetime-local" /><br />
+            <input type="time" /><br />
+            <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input id="email" type="email" placeholder="abc123@gmail.com" required /><br />
+            <label for="password">Password:</label>
+            <input id="password" type="password" required /><br />
+            <input type="range" /><br />
+            <label for="search">Search:</label>
+            <input id="search" type="search" /><br />
+            <label for="url">URL:</label>
+            <input id="url" type="url" /><br />
+            <input type="month" /><br />
+            <input type="week" /><br />
+            <label for="number">Number:</label>
+            <input id="number" type="number" disabled /><br />
+            <label for="select">Marital Status:</label>
+        </fieldset>
+        <select id="select">
+            <option>Select</option>
+            <option selected>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+        </select><br />
+        <label for="address">Address:</label><br />
+        <textarea id="address" cols="30" rows="10" placeholder="Your address"></textarea><br />
+        <input type="hidden" /><br />
+        <input type="file" /><br />
+        <input type="color" />
+        <button>Reset</button>
+        <input type="button" value="Save" />
+        <input type="submit" /><br />
+        <input type="checkbox" checked required />
+        <label for="checkbox">By clicking this you agree to our terms and conditons.</label>
+
+    </form>
+</body>
+
+</html>

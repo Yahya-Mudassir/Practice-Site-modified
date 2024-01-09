@@ -1,0 +1,205 @@
+*{
+    font: normal normal normal 20px/40px 'Open Sans', sans-serif;
+    /* font-family: sans-serif, fantasy, serif; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    /* font-variant: normal; */
+    /* font-size: 2vw; */
+    /* font-family: 'Bruno Ace SC', cursive, sans-serif; */
+     background-color: rgb(17, 17, 17);
+     color: rgb(168, 248, 199);
+     ::selection{
+        background-color: chocolate;
+     }
+}
+.width{
+    border:2px solid gray;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    overflow: auto;
+}
+.floatgeneral{
+    float: left;
+}
+
+/* media queries */
+/* styles for 900px devices */
+@media only screen and (max-width: 900px){
+    body{
+        background-color: black;
+    }
+}
+    
+
+
+.div1{
+    background-color: green;
+    /* float: left; */
+}
+.div2{
+    background-color: blue;
+    /* clear: left; */
+}
+.div3{
+    background-color: red;
+}
+.in-block{
+    display: inline-block;
+    width: 70px;
+    height: 160px;
+    background-color: blueviolet;
+}
+.in-block2{
+    display: inline-block;
+    width: 70px;
+    height: 130px;
+    background-color: blueviolet;
+}
+.linktest{
+    color: black;
+    background-color: lightgray;
+    font:30px/60px Calibri; 
+    padding: 4px 15px 4px 15px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    visibility: visible;
+}
+.linktest:hover{
+    color: brown;
+    background-color: lightgrey;
+    border: 2px solid brown;
+    text-decoration: underline;
+}
+.linktest:active{
+    color: brown;
+    background-color: lightgrey;
+    border: 2px solid brown;
+    text-decoration: underline;
+}
+
+
+#mainlinks{
+    word-spacing: 3vw;
+    line-height: 6vw;
+    background-color: rgb(54, 18, 18);
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+    border: 2px solid lightgreen;
+    margin: 2vw;
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+.links{
+    animation: glow-out 0.15s;
+    color: lightgreen;
+    background-color: black;
+    font:1.75vw/60px 'Open Sans', sans-serif;
+    vertical-align: middle;
+    padding: 0.5vw 1.75vw 0.5vw 1.75vw;
+    border: 1px solid lightgreen;
+    border-radius: 3vw;
+    text-decoration: none;
+    text-align: center;
+}
+.links:hover{
+    animation-name: glow-in;
+    animation-duration: 0.15s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes glow-in{
+    from{
+        background-color: black;
+        border-color: lightgreen;
+        color: lightgreen;
+        box-shadow: none;
+        font-weight: normal;
+    }
+    to{
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 255, 0);
+        color: rgb(0, 255, 0);
+        box-shadow: 0px 0px 10px rgb(0, 255, 0) ;
+        font-weight: bolder; 
+    } 
+}
+@keyframes glow-out{
+    from{
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 255, 0);
+        color: rgb(0, 255, 0);
+        box-shadow: 0px 0px 10px rgb(0, 255, 0) ;
+        font-weight: bolder; 
+        
+    }
+    to{
+        background-color: black;
+        border-color: lightgreen;
+        color: lightgreen;
+        box-shadow: none;
+        font-weight: normal;
+        
+    }
+}
+
+.font{
+    font-size:x-large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.parapair{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading {
+    border: 20px groove brown;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.one1 {
+    border: 2px solid green;
+    margin-bottom: 40px;
+
+}
+
+.one2 {
+    width: 110px;
+    border: 2px solid red;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+    /* width and padding adds if box-sizing is not given*/
+}
+.demo1{
+    color: cornsilk;
+    background-color: brown;
+    border: 2px solid red;
+    outline: dashed thin #5d3;
+    outline-offset: 4px;
+    text-align: justify;
+    direction: ltr;
+    text-transform: none;
+    text-indent: 20px;
+    letter-spacing: 3px;
+    line-height: none;
+    word-spacing: 10px;
+    white-space: normal;
+    text-shadow: 3px 3px 2px  orange;
+    unicode-bidi: bidi-override;
+}
+.align{
+    vertical-align: bottom;
+}
